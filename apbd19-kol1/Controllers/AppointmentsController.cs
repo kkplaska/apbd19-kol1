@@ -17,14 +17,17 @@ public class AppointmentsController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetAppointments()
+    public async Task<IActionResult> GetPatientVisit(int id)
     {
-        return Ok();
+        var patientVisit = await _appointmentsService.GetPatientVisit(id);
+        
+        return Ok(patientVisit);
     }
 
     [HttpPost]
     public async Task<IActionResult> AddClient(AppointmentDto appointment)
     {
+        await _appointmentsService.AddAppointment(appointment);
         return Created();
     }
     
