@@ -9,12 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controllers\" />
-      <Folder Include="Models\Dtos\" />
-      <Folder Include="Services\" />
+        <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
     </ItemGroup>
 
 </Project>

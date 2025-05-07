@@ -1,3 +1,5 @@
+using apbd19_kol1.Services;
+
 namespace apbd19_kol1;
 
 public class Program
@@ -8,7 +10,7 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddControllers();
-        // builder.Services.AddScoped<ITripsService, TripsService>();
+        builder.Services.AddScoped<IAppointmentsService, AppointmentsService>();
 
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         builder.Services.AddOpenApi();
