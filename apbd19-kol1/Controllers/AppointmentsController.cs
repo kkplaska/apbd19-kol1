@@ -16,6 +16,13 @@ public class AppointmentsController : ControllerBase
         _appointmentsService = appointmentsService;
     }
 
+    // [HttpGet]
+    // public async Task<IActionResult> Get()
+    // {
+    //     return Ok();
+    // }
+    
+    
     [HttpGet("{id}")]
     public async Task<IActionResult> GetPatientVisit(int id)
     {

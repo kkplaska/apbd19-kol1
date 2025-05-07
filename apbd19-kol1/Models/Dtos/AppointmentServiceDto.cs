@@ -3,5 +3,5 @@
 public class AppointmentServiceDto
 {
     public string name { get; set; } = string.Empty;
-    public string serviceFee { get; set; } = string.Empty;
+    public decimal serviceFee { get; set; }
 }
